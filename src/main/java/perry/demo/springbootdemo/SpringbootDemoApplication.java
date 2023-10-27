@@ -7,7 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringbootDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootDemoApplication.class, args);
+		var ctx = SpringApplication.run(SpringbootDemoApplication.class, args);
+		//获取MyConfig对应的配置类
+		System.out.println(ctx.getBean("myConfig"));
+		System.out.println(ctx.getBean("myBean"));
 	}
 
 }
