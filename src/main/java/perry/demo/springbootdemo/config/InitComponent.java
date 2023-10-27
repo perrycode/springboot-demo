@@ -10,6 +10,7 @@ public class InitComponent {
         MyService myService = new MyService();
         myService.setName("test");
         return myService;
+
     }
 
 }
